@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey</title>
+</head>
+<body>
+  <div class="glass-background">
+    <header>
+      <p class="glass-background" id="description">Satisfaction Survey</p>
+      <h1 class="logo" id="title">
+        <p class="logo-title">Royal Flame</p>
+        <p class="logo-subtitle">Restaurant</p>
+      </h1>
+    </header>
+    <main id="form-container">
+      <form id="survey-form" action="#" method="post">
+        <fieldset class="form-group" name="general-info">
+          <legend class="form-group-legend">General info</legend>
+          <div class="form-element">
+            <label class="form-label" for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name..." required>
+          </div>
+          <div class="form-element">
+            <label class="form-label" for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email..." required>
+          </div>
+          <div class="form-element">
+            <label class="form-label" for="gender">Gender (optional)</label>
+            <select name="gender" id="dropdown">
+              <option value="null">Select...</option> 
+              <option value="female">Female</option> 
+              <option value="male">Male</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-element">
+            <label class="form-label" for="age" id="number-label">Age</label>
+            <input type="number" name="age" id="number" min="0" max="120" placeholder="Enter your age..." required>
+          </div>
+          <div class="form-element">
+            <label class="form-label" for="visit">Day visited</label>
+            <input type="date" name="visist" id="visit" required>
+          </div>      
+          <div class="form-element">
+            <p class="element-title"> Was this your first visit?</p>
+            <label class="form-label" for="first-visit-yes">Yes</label>
+            <input type="radio" name="first-visit" id="dine-in" value="yes" required>
+            <label class="form-label" for="first-visit-no">No</label>
+            <input type="radio" name="first-visit" id="take-out" value="no" required>
+            </select>
+          </div>
+          <div class="form-element">
+            <p class="element-title"> Was it dine in or take out?</p>
+            <label class="form-label" for="dine-in">Dine in</label>
+            <input type="radio" name="dine-location" id="dine-in" value="in" required>
+            <label class="form-label" for="take-out">Take out</label>
+            <input type="radio" name="dine-location" id="take-out" value="out" required>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset class="form-group" name="general-info">
+          <legend class="form-group-legend">What did you order?</legend>
+          <div class="form-element">
+            <p class="element-title">appetizers</p>
+            <label class="form-label" for="mozzarella-sticks">Mozzarella Sticks</label>
+            <input type="checkbox" name="appetizers" id="mozzarella-sticks" value="mozzarella-sticks">
+            <label class="form-label" for="onion-rings">Onios Rings</label>
+            <input type="checkbox" name="appetizers" id="onion-rings" value="onion-rings">
+            <label class="form-label" for="nachos">Nachos</label>
+            <input type="checkbox" name="appetizers" id="nachos" value="nachos">
+            <label class="form-label" for="french-fries">French Fries</label>
+            <input type="checkbox" name="appetizers" id="french-fries" value="french-fries">
+          </div>
+          <div class="form-element">
+            <p class="element-title">Main dishes</p>
+            <label class="form-label" for="Pasta">Pasta</label>
+            <input type="checkbox" name="main-dish" id="Pasta" value="Pasta">
+            <label class="form-label" for="Seafood">Seafood</label>
+            <input type="checkbox" name="main-dish" id="Seafood" value="Seafood">
+            <label class="form-label" for="soup">Soup</label>
+            <input type="checkbox" name="main-dish" id="soup" value="soup">
+            <label class="form-label" for="salad">Salad</label>
+            <input type="checkbox" name="main-dish" id="salad" value="salad">
+          </div>
+          <div class="form-element">
+            <p class="element-title">Deserts</p>
+            <label class="form-label" for="cake">Cake</label>
+            <input type="checkbox" name="deserts" id="cake" value="cake">
+            <label class="form-label" for="icecream">Icecream</label>
+            <input type="checkbox" name="deserts" id="icecream" value="icecream">
+            <label class="form-label" for="pie">Pie</label>
+            <input type="checkbox" name="deserts" id="pie" value="pie">
+            <label class="form-label" for="fruit-salad">Fruit Salad</label>
+            <input type="checkbox" name="deserts" id="fruit-salad" value="fruit-salad">
+          </div>
+        </fieldset>
+        <fieldset class="form-group" name="rating">  
+          <legend class="form-group-legend">Rating</legend>
+          <div class="form-element">
+            <p class="element-title">Food Quality</p>
+            <label class="form-label" for="excellent">Excellent</label>
+            <input type="radio" name="food" id="excellent" value="excellent" required>
+            <label class="form-label" for="good">Good</label>
+            <input type="radio" name="food" id="good" value="good">
+            <label class="form-label" for="average">Average</label>
+            <input type="radio" name="food" id="average" value="average">
+            <label class="form-label" for="poor">Poor</label>
+            <input type="radio" name="food" id="poor" value="poor">
+          </div>
+          <div class="form-element">
+            <p class="element-title">Cleanliness</p>
+            <label class="form-label" for="excellent">Excellent</label>
+            <input type="radio" name="cleanliness" id="excellent" value="excellent" required>
+            <label class="form-label" for="good">Good</label>
+            <input type="radio" name="cleanliness" id="good" value="good">
+            <label class="form-label" for="average">Average</label>
+            <input type="radio" name="cleanliness" id="average" value="average">
+            <label class="form-label" for="poor">Poor</label>
+            <input type="radio" name="cleanliness" id="poor" value="poor">
+          </div>
+          <div class="form-element">
+            <p class="element-title">Order Accuracy</p>
+            <label class="form-label" for="excellent">Excellent</label>
+            <input type="radio" name="order-accuracy" id="excellent" value="excellent" required>
+            <label class="form-label" for="good">Good</label>
+            <input type="radio" name="order-accuracy" id="good" value="good">
+            <label class="form-label" for="average">Average</label>
+            <input type="radio" name="order-accuracy" id="average" value="average">
+            <label class="form-label" for="poor">Poor</label>
+            <input type="radio" name="order-accuracy" id="poor" value="poor">
+          </div>
+          <div class="form-element">
+            <p class="element-title">Speed of Service</p>
+            <label class="form-label" for="excellent">Excellent</label>
+            <input type="radio" name="speed" id="excellent" value="excellent" required>
+            <label class="form-label" for="good">Good</label>
+            <input type="radio" name="speed" id="good" value="good">
+            <label class="form-label" for="average">Average</label>
+            <input type="radio" name="speed" id="average" value="average">
+            <label class="form-label" for="poor">Poor</label>
+            <input type="radio" name="speed" id="poor" value="poor">
+          </div>
+          <div class="form-element">
+            <p class="element-title">Overall Service Quality</p>
+            <label class="form-label" for="excellent">Excellent</label>
+            <input type="radio" name="service" id="excellent" value="excellent" required>
+            <label class="form-label" for="good">Good</label>
+            <input type="radio" name="service" id="good" value="good">
+            <label class="form-label" for="average">Average</label>
+            <input type="radio" name="service" id="average" value="average">
+            <label class="form-label" for="poor">Poor</label>
+            <input type="radio" name="service" id="poor" value="poor">
+          </div>
+          <div class="form-element">
+            <p class="element-title">Value</p>
+            <label class="form-label" for="excellent">Excellent</label>
+            <input type="radio" name="value" id="excellent" value="excellent" required>
+            <label class="form-label" for="good">Good</label>
+            <input type="radio" name="value" id="good" value="good">
+            <label class="form-label" for="average">Average</label>
+            <input type="radio" name="value" id="average" value="average">
+            <label class="form-label" for="poor">Poor</label>
+            <input type="radio" name="value" id="poor" value="poor">
+          </div>
+          <div class="form-element">
+            <p class="element-title">Overall Experience </p>
+            <label class="form-label" for="excellent">Excellent</label>
+            <input type="radio" name="experience" id="excellent" value="excellent" required>
+            <label class="form-label" for="good">Good</label>
+            <input type="radio" name="experience" id="good" value="good">
+            <label class="form-label" for="average">Average</label>
+            <input type="radio" name="experience" id="average" value="average">
+            <label class="form-label" for="poor">Poor</label>
+            <input type="radio" name="experience" id="poor" value="poor">
+          </div>
+        </fieldset>
+        <div class="form-element">
+          <label class="form-label" for="sugestions">Any comments, questions or suggestions?</label>
+          <textarea type="text" name="sugestions" id="sugestions"></textarea>
+        </div>
+        <div class="form-element">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer>&copy; Paula Salvado</footer>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

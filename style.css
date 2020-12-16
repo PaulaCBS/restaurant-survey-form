@@ -1,0 +1,221 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  font-family: 'Quicksand', sans-serif;
+  color: #FFF;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  padding: 4% 15% 0 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(30deg,#4d072a 20%, #cc5333 100%);
+}
+.glass-background{
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-style: inset;
+  border-radius: 0.5rem;
+  fill-opacity: 0.2;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.20) center cover;
+}
+header{
+  width: 100%;
+  height: 18vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#description{
+  position: relative;
+  top: 10%;
+  width: 60%;
+  padding: 1.2% 0;
+  border-radius: 0.5rem;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  background: #FFF;
+  color: #cc5333;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
+}
+.logo{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#logo-img{
+  width: 6vw;
+}
+.logo-title{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 4em;
+  color: #EEE;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+  text-shadow: 0px -1px 2px rgba(0, 0, 0, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+#form-container{
+  width: 100%;
+  padding: 8% 8% 2% 8%;
+}
+.form-group{
+  margin: 5% 0;
+  padding: 1% 8%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.form-group:nth-child(1){
+  margin-top: 0;
+}
+fieldset[name="order-info"] .form-element:not(:last-child), fieldset[name="rating"] .form-element:not(:last-child){
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 4% 0;
+  margin: 0;
+}
+.form-element{
+  width: 100%;
+  margin: 4% 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-element.medium{
+  width: 50%;
+  padding: 0 2%;
+}
+.form-element.smaller{
+  width: 33%;
+  padding: 0 2%;
+}
+.element-title, label[for="sugestions"]{
+  width: 100%;
+  margin-bottom: 1.5%;
+  font-size: 1.15em;
+  font-weight: 500;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.option-label{
+  margin-right: 6%;
+}
+.option-label:hover{
+  color: #fff176;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+input[type="radio"], input[type="checkbox"]{
+  width: 1.8vw;
+  padding: 0;
+}
+input, select{
+  width: 100%;
+  padding: 2% 4%;
+  color: #333;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+option[value=""]{
+  color: red;
+}
+#sugestions{
+  width: 100%;
+  margin: 1% 0;
+  padding: 3%;
+  min-height: 10vw;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: transparent;
+}
+.submit-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#submit{
+  padding: 0.6rem 3rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  background-color: #FFF;
+  color: #cc5333;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
+  cursor: pointer;
+}
+#submit:hover{
+  background-color: #cc5333;
+  color: #FFF;
+}
+footer{
+  padding: 4% 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+@media screen and (max-width: 920px){
+  body{
+    padding: 2% 10% 0 10%;
+  }
+  header{
+    height: 30vw;
+  }
+  #logo-img{
+    width: 8vw;
+  }
+  .logo-title{
+    font-size: 3em;
+  }
+  #form-container{
+    padding: 12% 12% 5% 12%;
+  }
+  .form-group{
+    margin: 10% 0;
+    padding: 5% 10%;
+    justify-content: center;
+  }
+  fieldset[name="order-info"] .form-element:not(:last-child), fieldset[name="rating"] .form-element:not(:last-child){
+    padding: 8% 0;
+  }
+  .form-element, .form-element.medium, .form-element.smaller{
+    width: 100%;
+  }
+  .option-label{
+    width: 88%;
+  }
+  #sugestions{
+    min-height: 30vw;
+  }
+}
+@media screen and (max-width: 400px){
+  header{
+    height: 40vw;
+  }
+  #logo-img{
+    width: 15vw;
+  }
+  .logo-title{
+    font-size: 2em;
+  }
+  #description{
+    width: 80%;
+    padding: 1% 2%;
+  }
+  .option-label{
+    width: 87%;
+  }
+}
